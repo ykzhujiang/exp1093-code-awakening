@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXP-1093: 代码觉醒</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'PingFang SC','Microsoft YaHei',sans-serif;line-height:1.8;max-width:420px;margin:0 auto;padding:16px}
+h1{font-size:24px;text-align:center;color:#00ff88;margin:20px 0 8px;text-shadow:0 0 20px rgba(0,255,136,0.3)}
+.subtitle{text-align:center;color:#666;font-size:14px;margin-bottom:24px}
+.meta{background:rgba(0,255,136,0.05);border:1px solid rgba(0,255,136,0.15);border-radius:8px;padding:12px;margin-bottom:24px;font-size:13px;color:#8a8a8a}
+.meta span{color:#00ff88}
+.segment-header{background:linear-gradient(135deg,#0d1117,#1a1a2e);border-left:3px solid #00ff88;padding:12px 16px;margin:20px 0 16px;border-radius:0 8px 8px 0;font-size:15px;color:#00ff88}
+.anchoring{background:rgba(0,255,136,0.03);border:1px dashed rgba(0,255,136,0.2);border-radius:8px;padding:12px;margin-bottom:16px;font-size:13px;color:#888}
+.anchoring strong{color:#00ff88}
+.part{background:rgba(255,255,255,0.03);border-radius:12px;padding:16px;margin-bottom:16px;border:1px solid rgba(255,255,255,0.06);transition:border-color 0.3s}
+.part:hover{border-color:rgba(0,255,136,0.3)}
+.part-num{display:inline-block;background:#00ff88;color:#0a0a0f;font-size:11px;font-weight:bold;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.part-time{color:#666;font-size:12px;margin-left:8px}
+.camera{color:#4fc3f7;font-size:13px;margin-bottom:6px}
+.action{font-size:15px;line-height:1.8;margin-bottom:8px}
+.dialogue{background:rgba(0,255,136,0.08);border-radius:8px;padding:10px 14px;margin:8px 0;font-size:15px;position:relative}
+.dialogue::before{content:'"';position:absolute;left:4px;top:-4px;font-size:28px;color:rgba(0,255,136,0.3)}
+.dialogue .speaker{color:#00ff88;font-weight:bold;font-size:13px}
+.emotion{color:#ff9800;font-size:13px;font-style:italic;margin-top:6px}
+.characters{margin:16px 0}
+.char{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px;margin-bottom:12px}
+.char-name{font-size:18px;font-weight:bold;color:#00ff88;margin-bottom:8px}
+.char-detail{font-size:13px;color:#999;line-height:1.6}
+.char-detail li{margin-bottom:2px;list-style:none}
+.char-detail li::before{content:'›';color:#00ff88;margin-right:8px}
+.scene{background:linear-gradient(135deg,rgba(0,100,200,0.08),rgba(0,200,100,0.05));border:1px solid rgba(0,150,255,0.15);border-radius:12px;padding:16px;margin:16px 0}
+.scene-name{font-size:16px;font-weight:bold;color:#4fc3f7;margin-bottom:8px}
+.scene-detail{font-size:13px;color:#999;line-height:1.6}
+.cliffhanger{text-align:center;margin:32px 0;padding:20px;background:linear-gradient(135deg,rgba(255,0,0,0.05),rgba(255,150,0,0.08));border:1px solid rgba(255,100,0,0.2);border-radius:12px}
+.cliffhanger-text{font-size:18px;color:#ff9800;font-weight:bold}
+.footer{text-align:center;color:#444;font-size:12px;margin-top:40px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.05)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+.blink{animation:pulse 2s infinite}
+</style>
+</head>
+<body>
+
+<h1>🖥️ 代码觉醒</h1>
+<p class="subtitle">都市异能 × 黑客 × 系统文</p>
+
+<div class="meta">
+<strong>类型</strong>: <span>都市异能 × 黑客 × 系统文</span><br>
+<strong>风格</strong>: <span>写实</span><br>
+<strong>时长</strong>: <span>15秒 · 1 Segment · 6 Parts</span><br>
+<strong>背景</strong>: <span>中国·当代·都市·2026</span>
+</div>
+
+<h2 style="color:#00ff88;font-size:18px;margin:20px 0 12px">👤 角色</h2>
+
+<div class="characters">
+<div class="char">
+<div class="char-name">林昊 Lin Hao</div>
+<ul class="char-detail">
+<li>男，28岁，178cm，偏瘦</li>
+<li>黑发微乱，中长，黑框眼镜</li>
+<li>棱角分明的下颌，眼下有黑眼圈</li>
+<li>深灰色连帽卫衣 + 黑色T恤 + 牛仔裤</li>
+<li>眼镜片上映出绿色数据流</li>
+<li>视线始终看向屏幕/键盘，不面对镜头</li>
+</ul>
+</div>
+<div class="char">
+<div class="char-name">张浩然 Zhang Haoran</div>
+<ul class="char-detail">
+<li>男，35岁，中等身材，宽肩</li>
+<li>黑色短发，整齐梳理</li>
+<li>方脸，薄唇，东亚面孔</li>
+<li>深蓝西装，无领带，最上面扣子解开</li>
+<li>表情基线：沉着，算计的微笑</li>
+</ul>
+</div>
+</div>
+
+<div class="scene">
+<div class="scene-name">🏢 天网科技办公室 · 夜间</div>
+<div class="scene-detail">
+现代开放式科技办公区，深色调氛围。多台显示器显示代码和数据面板。天花板冷蓝色LED灯带。只有林昊的工位亮着灯。落地窗外是夜晚的城市天际线。
+</div>
+</div>
+
+<h2 style="color:#00ff88;font-size:18px;margin:24px 0 12px">🎬 分镜</h2>
+
+<div class="segment-header">Segment 1 · 天网科技办公室 · 夜间</div>
+
+<div class="anchoring">
+<strong>Physical State Anchoring</strong><br>
+林昊：坐在工位，双手放在键盘上，背微驼，视线盯着屏幕。屏幕显示密密麻麻的代码。
+</div>
+
+<div class="part">
+<span class="part-num">Part 1</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 中景，侧面45度角，固定机位</div>
+<div class="action">林昊坐在工位前，屏幕冷蓝光映在他脸上。他揉了揉眼睛，太阳穴突然剧烈疼痛，双手猛地抓住桌边。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"又来了……头疼得像有东西要炸开……"</div>
+<div class="emotion">😣 疲惫→突然剧痛，眉头紧皱，牙关咬紧</div>
+</div>
+
+<div class="part">
+<span class="part-num">Part 2</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 特写，林昊的眼睛</div>
+<div class="action">瞳孔骤然放大，眼球表面出现细密的绿色数据流倒影（如同代码瀑布）。黑框眼镜的镜片上映出翻滚的代码行。他猛地睁大眼，呼吸急促。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"什么……我能看见……代码？"</div>
+<div class="emotion">😱 震惊，不可置信，瞳孔聚焦在屏幕上</div>
+</div>
+
+<div class="part">
+<span class="part-num">Part 3</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 主观视角/过肩镜头，从林昊身后拍向屏幕</div>
+<div class="action">原本普通的代码编辑器界面上，每一行代码都像被"解锁"了——隐藏的注释浮现出来，红色高亮标记着"USER_DATA_COLLECT"、"LOCATION_TRACK"、"PRIVACY_BYPASS"等字样。数据流从屏幕向外溢出。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"这些……是什么？隐藏接口……用户数据采集？"</div>
+<div class="emotion">😠 从震惊转为警觉，身体前倾，手指悬在键盘上方</div>
+</div>
+
+<div class="part">
+<span class="part-num">Part 4</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 中景推近</div>
+<div class="action">林昊快速翻查代码。手指在键盘上飞速敲击，每敲一下，屏幕上的隐藏代码层就展开更多。其中一段代码赫然写着"Project Skynet — Phase 3: Full Surveillance Activation — Authorized by: Zhang Haoran"。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"张浩然……CTO亲自签发的。天网不是AI助手——是监控系统！"</div>
+<div class="emotion">😤 震怒，但压制住了，声音压低，像是怕被人听见</div>
+</div>
+
+<div class="part">
+<span class="part-num">Part 5</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 远景→中景推进</div>
+<div class="action">林昊猛地站起来，椅子向后滑出。办公室空无一人，但他本能地环顾四周——天花板角落的摄像头，红色指示灯正在闪烁<span class="blink">●</span>。他意识到自己正在被监控。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"摄像头……全都开着。他们知道我在加班。"</div>
+<div class="emotion">😰 紧张，压迫感，下意识把帽子拉起来遮住脸</div>
+</div>
+
+<div class="part">
+<span class="part-num">Part 6</span><span class="part-time">~2.5s</span>
+<div class="camera">📷 特写，林昊的手</div>
+<div class="action">他从口袋掏出U盘，犹豫了一秒，然后果断插入电脑。屏幕上弹出进度条："数据导出中……3%"。与此同时，他的手机震动——来电显示"张浩然"。林昊盯着手机屏幕，没有接。</div>
+<div class="dialogue"><span class="speaker">林昊</span><br>"三分钟前我'死'过一次。这次，我不会再当什么都没看见。"</div>
+<div class="emotion">😏 从犹豫到决然。嘴角微微上扬——不是笑，是下定决心的表情</div>
+</div>
+
+<div class="cliffhanger">
+<div class="cliffhanger-text">📱 来电显示：张浩然<br><small style="color:#e0e0e0">数据导出 3%……他接还是不接？</small></div>
+</div>
+
+<div class="footer">
+EXP-1093 · 代码觉醒 · S-Format v7.5<br>
+Trinity V3 · V6.1 短剧剧本
+</div>
+
+</body>
+</html>
