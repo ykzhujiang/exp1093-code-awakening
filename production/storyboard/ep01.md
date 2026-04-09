@@ -7,46 +7,20 @@
 
 ---
 
-## Part 1: Characters & Scenes
+# PART 1
 
-### Character Assets
+## Characters
 
-**林昊 (Lin Hao)** [林昊]
-- Gender: Male
-- Age: 28
-- Build: Slim, tall (178cm)
-- Hair: Black, slightly messy, medium length
-- Face: Sharp jawline, dark circles under eyes, black-framed glasses
-- Skin: East Asian, Chinese Han, light complexion
-- Clothing: Dark gray hoodie over black t-shirt, jeans
-- Expression baseline: Tired → shocked → determined
-- Distinguishing: Green data-stream reflections visible in his glasses lenses
-- NOT facing camera. Eyes on screens/keyboards.
+- [林昊]: 28岁中国男性程序员，178cm偏瘦，黑色微乱中长发，黑框眼镜，棱角分明的下颌线，眼下有明显黑眼圈，穿深灰色连帽卫衣+黑色T恤+牛仔裤，眼镜镜片映出绿色数据流倒影，表情从疲惫到震惊到坚定，East Asian Chinese Han male
+- [张浩然]: 35岁中国男性CTO，中等身材宽肩，黑色短发整齐梳理，方脸薄唇，穿深蓝西装无领带最上面扣子解开，表情沉着带算计的微笑，East Asian Chinese Han male
 
-**张浩然 (Zhang Haoran)** [张浩然]
-- Gender: Male
-- Age: 35
-- Build: Medium, broad shoulders
-- Hair: Black, short, neatly combed
-- Face: Square jaw, thin lips, East Asian Chinese Han features
-- Skin: Light complexion
-- Clothing: Navy blue suit, no tie, top button undone
-- Expression baseline: Calm, calculating smile
-- NOT facing camera.
+## Scenes
 
-### Scene Assets
-
-**天网科技办公室 (Night)** [办公室]
-- Modern open-plan tech office, dark ambiance
-- Multiple monitors with code/data dashboards
-- Cool blue LED strip lighting along ceiling
-- Only one workstation lit (Lin Hao's)
-- Floor-to-ceiling windows showing city skyline at night
-- Setting: Contemporary urban China, 2026
+- [办公室-夜]: 现代开放式科技公司办公区夜间场景，深色调氛围，多台显示器显示代码和数据面板，天花板冷蓝色LED灯带，只有一个工位亮着灯，落地窗外是夜晚城市天际线，contemporary urban China 2026
 
 ---
 
-## Part 2: Storyboard
+# PART 2
 
 ## Segment 1
 Location: 天网科技办公室，夜间
