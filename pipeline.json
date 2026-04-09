@@ -14,7 +14,7 @@
     "source_video": null,
     "entry": "B"
   },
-  "status": "step3_in_progress",
+  "status": "step3_done",
   "steps": {
     "step1b": {
       "status": "done",
@@ -32,8 +32,11 @@
       "storyboard_verdict": "SKIP"
     },
     "step3": {
-      "status": "failed",
-      "started_at": "2026-04-09T08:39:44.223442+00:00"
+      "status": "done",
+      "completed_at": "2026-04-09T08:43:00Z",
+      "output": "asset-map.json",
+      "asset_count": 3,
+      "note": "catbox failed, using GitHub raw URLs (same fix as cycle 833)"
     },
     "step4": {
       "status": "not_started"

@@ -1,0 +1,17 @@
+{
+  "林昊": {
+    "type": "character",
+    "local": "assets/林昊.png",
+    "url": "https://raw.githubusercontent.com/ykzhujiang/exp1093-code-awakening/main/assets/林昊.png"
+  },
+  "张浩然": {
+    "type": "character",
+    "local": "assets/张浩然.png",
+    "url": "https://raw.githubusercontent.com/ykzhujiang/exp1093-code-awakening/main/assets/张浩然.png"
+  },
+  "办公室-夜": {
+    "type": "scene",
+    "local": "assets/办公室-夜.png",
+    "url": "https://raw.githubusercontent.com/ykzhujiang/exp1093-code-awakening/main/assets/办公室-夜.png"
+  }
+}
